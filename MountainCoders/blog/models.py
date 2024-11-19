@@ -7,3 +7,6 @@ class Blog(models.Model):
     content = models.TextField()
     slug = models.CharField(max_length=100)
     time = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
